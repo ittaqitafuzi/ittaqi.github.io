@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css"> 
+
+    <script>
+        function showDateTime() {
+            const now = new Date();
+            const datetimeString = now.toLocaleString();
+            document.getElementById("datetime").textContent = datetimeString;
+        }
+        setInterval(showDateTime, 1000);
+    </script>
+</head>
+<body onload="showDateTime()">
+
+    <header>
+        <img src="uci .jpg" alt="Foto Profil"> 
+        <h1>Ittaqi Tafuzi</h1>
+        <h2>S1 Sistem Informasi</h2>
+        <h3>Telkom University Purwokerto</h3>
+    </header>
+
+    <section>
+        <table>
+            <tr>
+                <th>Data</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td>102092400082</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><a href="mailto:ittaqitafuzi129@gmail.com">ittaqitafuzi129@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td>No. Telp</td>
+                <td><a href="tel:+6282322012633">082322012633</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="social">
+        <h2>Media Sosial</h2>
+        <a href="https://github.com/ittaqi" target="_blank">Github</a> &    
+        <a href="https://www.instagram.com/_uccchy" target="_blank">Instagram</a>
+    </section>
+
+    <div id="datetime"></div>
+
+    <footer>
+        <p>&copy; 2025 Ittaqi Tafuzi</p>
+    </footer>
+
+</body>
+</html>
